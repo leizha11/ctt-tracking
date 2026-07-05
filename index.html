@@ -1,1 +1,202 @@
-Commit
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title id="pageTitle">轨迹查询</title>
+<meta name="description" content="CTT物流追踪系统">
+<meta name="keywords" content="物流,快递,追踪,轨迹查询,CTT">
+<style type="text/css">
+*{margin:0;padding:0;font:12px Verdana,Arial}
+body{background:#eef1f5;background-attachment:fixed}
+.div_l{float:left;width:550px;height:200px}
+.div_r1{float:left;margin-top:50px;width:300px;height:200px}
+.div_f{width:100%;height:260px}
+.div_con{width:1300px;margin-top:10px;margin-left:auto;margin-right:auto}
+.div_cont{float:left;height:auto;width:1100px;margin-bottom:20px}
+.content{width:1100px;margin-left:auto;margin-right:auto}
+.menu_search{width:460px;height:100px;margin-top:20px;margin-bottom:40px}
+.search{width:250px;float:left;height:100px;border-radius:5px;border:2px solid #1291c5;resize:none;padding:5px;box-sizing:border-box;font-size:14px}
+.input_search{float:left;width:90px;border-radius:5px;font-size:15px;height:50px;border:0;margin-top:20px;color:#fff;background:#1291c5;margin-left:20px;cursor:pointer}
+.input_search:hover{border-radius:5px;background-color:#07bde4}
+.div_canta{float:left;width:100%;margin-bottom:20px}
+.div_tb_h{float:left;border:1px solid #dcddd7;width:100%;padding-top:10px;height:30px}
+.danhao{float:left;width:300px;font-weight:600;margin-right:10px;color:#1d2088}
+.hd{float:left;color:#F00;font-weight:600}
+.menu_{width:100%}
+.menu_ ul{width:100%;list-style:none;padding:0;margin:0}
+.menu_ ul li{float:left;padding:5px;margin-bottom:1px;list-style:none;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;border:1px solid #dcddd7;box-sizing:border-box}
+.abc{font-weight:600;background:#ededed;height:auto!important;padding:8px 5px!important}
+.egtrcak{float:left;width:100px;height:60px;margin-left:90px;margin-top:50px}
+.clearfix:after{content:"\20";display:block;height:0;line-height:0;font-size:0;clear:both}
+.data-row{width:100%;float:left;margin-bottom:10px;border:1px solid #dcddd7}
+.data-row .order-header{padding:6px 8px;background:#f0f5ff;font-weight:600;color:#1d2088;border-bottom:1px solid #dcddd7}
+.data-row .order-info{padding:6px 8px;border-bottom:1px solid #dcddd7;background:#fff;line-height:1.8}
+.data-row .order-info span{display:inline-block;margin-right:15px}
+.data-row .order-info .label{color:#666}
+.data-row .order-info .value{color:#333;font-weight:600}
+.track-table{width:100%;border-collapse:collapse;border-top:none}
+.track-table th,.track-table td{border:1px solid #dcddd7;padding:7px 8px;text-align:left;font-size:12px}
+.track-table th{background:#ededed;font-weight:600}
+.track-table tr:nth-child(even){background:#f9f9f9}
+.no-data{text-align:center;padding:30px;color:#999;font-size:14px;border:1px solid #dcddd7;border-top:none}
+.lang-bar{float:right;margin-top:10px;margin-right:20px}
+.lang-bar a{display:inline-block;padding:4px 10px;margin-left:5px;border:1px solid #1291c5;border-radius:3px;color:#1291c5;text-decoration:none;cursor:pointer;font-size:12px}
+.lang-bar a.active{background:#1291c5;color:#fff}
+.lang-bar a:hover{background:#07bde4;color:#fff}
+</style>
+</head>
+<body>
+
+<div class="div_f">
+<div class="div_con">
+<div class="lang-bar" id="langBar">
+<a href="javascript:void(0)" class="active" onclick="switchLang('zh')">中文</a>
+<a href="javascript:void(0)" onclick="switchLang('es')">Espanol</a>
+<a href="javascript:void(0)" onclick="switchLang('pt')">Portugues</a>
+</div>
+<div class="div_l">
+<svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="120" cy="130" r="80" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="3"/>
+  <path d="M70 160 L90 110 L170 160 L90 190 Z" fill="#0284c7" opacity="0.85"/>
+  <rect x="145" y="145" width="50" height="25" rx="4" fill="#0ea5e9"/>
+  <rect x="180" y="150" width="18" height="15" rx="2" fill="#fff" opacity="0.6"/>
+  <text x="95" y="175" text-anchor="middle" font-size="14" font-weight="900" fill="#fff" font-family="Arial">CTT</text>
+  <rect x="220" y="100" width="80" height="55" rx="8" fill="#0369a1"/>
+  <rect x="220" y="100" width="80" height="18" rx="8" fill="#0284c7"/>
+  <text x="260" y="135" text-anchor="middle" font-size="20" font-weight="900" fill="#fff" font-family="Arial">ES</text>
+  <text x="260" y="148" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)" font-family="Arial">España</text>
+  <rect x="310" y="80" width="120" height="65" rx="6" fill="#0ea5e9"/>
+  <rect x="380" y="70" width="45" height="30" rx="5" fill="#0284c7"/>
+  <circle cx="345" cy="150" r="10" fill="#334155" stroke="#fff" stroke-width="2"/>
+  <circle cx="400" cy="150" r="10" fill="#334155" stroke="#fff" stroke-width="2"/>
+  <rect x="318" y="95" width="25" height="25" rx="3" fill="#fff" opacity="0.35"/>
+  <text x="250" y="220" text-anchor="middle" font-size="18" font-weight="700" fill="#0c4a6e" font-family="Arial,sans-serif" letter-spacing="5">CTT EXPRESS</text>
+  <text x="250" y="240" text-anchor="middle" font-size="12" fill="#64748b" font-family="Arial,sans-serif" letter-spacing="4">中国 → 西班牙 物流追踪</text>
+</svg>
+</div>
+<div class="div_r1">
+<div class="menu_search">
+<form action="javascript:void(0);" onsubmit="doQuery()">
+<textarea name="documentCode" cols="20" rows="5" class="search" id="cno" placeholder="请输入您的追踪号码"></textarea>
+<button class="input_search" type="submit" id="btnQuery">查询</button>
+</form>
+</div>
+</div>
+<div class="egtrcak">
+<a href="javascript:void(0);" onclick="switchLang('en')" style="display:inline-block;width:80px;height:50px;background:linear-gradient(180deg,#012169 0%,#012169 50%,#fff 50%,#fff 100%);border:1px solid #ccc;border-radius:3px;position:relative;overflow:hidden;"></a>
+</div>
+</div>
+</div>
+
+<div class="div_canta">
+<div class="content clearfix">
+<div class="div_con">
+<div class="div_tb_h">
+<div class="danhao" id="titlePrefix">【】<span id="lblShipInfo">运单信息</span></div>
+<div class="hd" id="titleTicket"><span id="lblTicket">第</span>【】<span id="lblTicket2">票</span></div>
+</div>
+<div id="resultBody">
+<div class="no-data" id="lblPrompt">请输入追踪号码进行查询</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+var LANG = {
+zh: {title:'轨迹查询',query:'查询',placeholder:'请输入您的追踪号码',shipInfo:'运单信息',ticket:'第',ticket2:'票',pieces:'件数',batchQuery:'批量查询',total:'共查询',found:'查到',notFound:'未查到',refNo:'参考号',trackNo:'跟踪号码',dest:'目的地',localTime:'当地时间',status:'最新状态',receiver:'收件人',noData:'请输入追踪号码进行查询',notFoundMsg:'未找到该运单信息',receiverInfo:'收件人信息',trackDetail:'物流轨迹详情',time:'时间',location:'地点',desc:'状态描述'},
+es: {title:'Seguimiento',query:'Consultar',placeholder:'Ingrese su número de seguimiento',shipInfo:'Información del envío',ticket:'Nº',ticket2:'',pieces:'Bultos',batchQuery:'Consulta múltiple',total:'Total',found:'Encontrados',notFound:'No encontrados',refNo:'Referencia',trackNo:'Seguimiento',dest:'Destino',localTime:'Hora local',status:'Estado',receiver:'Destinatario',noData:'Ingrese su número',notFoundMsg:'Envío no encontrado',receiverInfo:'Información del destinatario',time:'Fecha',location:'Ubicación',desc:'Estado'},
+pt: {title:'Rastreio',query:'Pesquisar',placeholder:'Insira o número de rastreio',shipInfo:'Informação',ticket:'Nº',ticket2:'',pieces:'Volumes',batchQuery:'Consulta múltipla',total:'Total',found:'Encontrados',notFound:'Não encontrados',refNo:'Referência',trackNo:'Rastreio',dest:'Destino',localTime:'Hora local',status:'Estado',receiver:'Destinatário',noData:'Insira o número',notFoundMsg:'Envio não encontrado',receiverInfo:'Informação do destinatário',time:'Data',location:'Local',desc:'Estado'}
+};
+var currentLang='zh';
+function t(key){return LANG[currentLang][key]||key;}
+function switchLang(lang){
+currentLang=lang;
+document.getElementById('pageTitle').textContent=t('title');
+document.getElementById('cno').placeholder=t('placeholder');
+document.getElementById('btnQuery').textContent=t('query');
+document.getElementById('lblShipInfo').textContent=t('shipInfo');
+document.getElementById('lblTicket').textContent=t('ticket');
+document.getElementById('lblTicket2').textContent=t('ticket2');
+document.getElementById('lblPrompt').textContent=t('noData');
+var items=document.querySelectorAll('#langBar a');
+for(var i=0;i<items.length;i++)items[i].className='';
+items[currentLang==='zh'?0:currentLang==='es'?1:2].className='active';
+var input=document.getElementById('cno').value.trim();
+if(input)doQuery();
+}
+
+var orderData = {
+'SBL063021215902':{refNo:'CRS001012238GZ',trackNo:'SBL063021215902',destination:'ES',localTime:'2026-07-05 18:35:00',status:'中转操作/等待配载',receiver:'Fernando Mendez',pieces:1,
+receiverInfo:{nome:'Fernando Mendez',pais:'Espana',cidade:'Salamanca',rua:'Calle Guadalajara, 6. Piso 3D',cep:'37003',telefone:'+34633176316'},
+records:[{time:'2026-07-05 18:35',location:'Frankfurt, DE',desc:'中转操作/等待配载'},{time:'2026-07-04 14:39',location:'Frankfurt, DE',desc:'货物到达中转站/中转运输'},{time:'2026-07-03 17:16',location:'Frankfurt, DE',desc:'中转运输中'},{time:'2026-07-03 06:46',location:'Shanghai, CN',desc:'到达操作中心'},{time:'2026-06-30 11:20',location:'广州',desc:'货物已出运/运输中'},{time:'2026-06-29 17:30',location:'广州',desc:'出口报关完成'},{time:'2026-06-29 08:45',location:'广州',desc:'货物离开操作中心'},{time:'2026-06-28 22:15',location:'广州',desc:'货物到达操作中心'},{time:'2026-06-28 14:32',location:'深圳',desc:'货物已揽收'}]},
+'0082800082909724501148':{refNo:'LKSH062223458689',trackNo:'0082800082909724501148',destination:'PT',localTime:'2026-07-05 20:00:00',status:'清关中/海关查验中',receiver:'Raul Diniz Abreu Lopes',pieces:1,
+receiverInfo:{nome:'Raul Diniz Abreu Lopes',pais:'Portugal',cidade:'Viseu',rua:'Largo do Eiro N2, Moselos, Campo, Viseu',cep:'3515-298',telefone:'925634946'},
+records:[{time:'2026-07-05 20:00',location:'Lisboa, PT',desc:'清关中/海关查验中'},{time:'2026-07-03 15:21',location:'Shanghai, CN',desc:'到达操作中心'},{time:'2026-06-29 10:00',location:'Lisboa, PT',desc:'清关中'},{time:'2026-06-27 14:30',location:'Lisboa, PT',desc:'货物到达目的地/等待清关'},{time:'2026-06-27 06:00',location:'Frankfurt, DE',desc:'货物到达中转站'},{time:'2026-06-25 22:00',location:'广州',desc:'货物已出运'},{time:'2026-06-25 15:00',location:'广州',desc:'出口报关完成'},{time:'2026-06-24 16:00',location:'广州',desc:'货物到达操作中心'},{time:'2026-06-24 10:30',location:'深圳',desc:'货物已揽收'}]},
+'SBL063021215901':{refNo:'CRS001012017GZ',trackNo:'SBL063021215901',destination:'PT',localTime:'2026-07-05 00:07:00',status:'货物到达目的地/等待清关',receiver:'LUIS SOUSA',pieces:1,
+receiverInfo:{nome:'LUIS SOUSA',pais:'Portugal',cidade:'Porto',rua:'RUA CONTUMIL 901',cep:'4350-134',telefone:'+351918554420'},
+records:[{time:'2026-07-05 00:07',location:'Lisboa, PT',desc:'货物到达目的地/等待清关'},{time:'2026-07-04 08:55',location:'Frankfurt, DE',desc:'中转运输中'},{time:'2026-07-03 06:25',location:'Shanghai, CN',desc:'到达操作中心'},{time:'2026-07-02 19:14',location:'Frankfurt, DE',desc:'货物到达中转站'},{time:'2026-07-01 22:37',location:'Guangzhou',desc:'货物已出运'},{time:'2026-07-01 15:43',location:'Guangzhou',desc:'出口报关完成'},{time:'2026-06-30 20:08',location:'Guangzhou',desc:'货物已入库'},{time:'2026-06-30 12:26',location:'Guangzhou',desc:'货物离开操作中心'},{time:'2026-06-28 21:14',location:'Guangzhou',desc:'货物已揽收'}]},
+'0082800082909724505909':{refNo:'CRS001012898GZ',trackNo:'0082800082909724505909',destination:'ES',localTime:'2026-07-03 17:32:00',status:'到达操作中心',receiver:'Alfonso Herrera Golderos',pieces:1,
+receiverInfo:{nome:'Alfonso Herrera Golderos',pais:'Espana',cidade:'Rivas-Vaciamadrid',rua:'Calle Platon, 4',cep:'28521',telefone:'648493470'},
+records:[{time:'2026-07-03 17:32',location:'Shanghai, CN',desc:'到达操作中心'},{time:'2026-07-01 16:28',location:'Madrid, ES',desc:'货物到达目的地处理中心'},{time:'2026-07-01 10:43',location:'Madrid, ES',desc:'海关放行/清关完成'},{time:'2026-06-30 14:37',location:'Madrid, ES',desc:'清关中'},{time:'2026-06-29 09:15',location:'Madrid, ES',desc:'清关中'},{time:'2026-06-28 11:52',location:'Madrid, ES',desc:'货物到达目的地/等待清关'},{time:'2026-06-27 08:14',location:'Frankfurt, DE',desc:'货物到达中转站'},{time:'2026-06-26 19:41',location:'广州',desc:'货物已出运'},{time:'2026-06-25 15:07',location:'广州',desc:'出口报关完成'},{time:'2026-06-25 09:33',location:'广州',desc:'货物离开操作中心'},{time:'2026-06-24 14:26',location:'深圳',desc:'货物已揽收'}]}
+};
+
+function doQuery(){
+var input=document.getElementById('cno').value.trim();
+if(!input){alert(t('placeholder'));return;}
+var codes=input.split(/[\n,，\s;；]+/).filter(function(c){return c.trim()!=='';});
+if(codes.length===0){alert(t('placeholder'));return;}
+var found=[],notFound=[];
+for(var i=0;i<codes.length;i++){
+var code=codes[i].trim();
+var d=orderData[code];
+if(d){found.push({code:code,data:d});}else{notFound.push(code);}
+}
+document.getElementById('titlePrefix').innerHTML='【'+t('batchQuery')+'】'+t('total')+codes.length+t('pieces');
+document.getElementById('titleTicket').innerHTML=t('found')+found.length+t('pieces')+'，'+t('notFound')+notFound.length+t('pieces');
+
+var html='';
+if(found.length===0){
+html='<div class="no-data">';
+for(var i=0;i<notFound.length;i++)html+=notFound[i]+' - '+t('notFoundMsg')+'<br>';
+html+='</div>';
+}else{
+for(var n=0;n<found.length;n++){
+var d=found[n].data,code=found[n].code;
+html+='<div class="data-row">';
+html+='<div class="order-header">'+code+'</div>';
+html+='<div class="order-info">';
+html+='<span><span class="label">'+t('refNo')+':</span> <span class="value">'+(d.refNo||'-')+'</span></span>';
+html+='<span><span class="label">'+t('trackNo')+':</span> <span class="value">'+d.trackNo+'</span></span>';
+html+='<span><span class="label">'+t('dest')+':</span> <span class="value">'+d.destination+'</span></span>';
+html+='<span><span class="label">'+t('localTime')+':</span> <span class="value">'+d.localTime+'</span></span>';
+html+='<span><span class="label">'+t('status')+':</span> <span class="value">'+d.status+'</span></span>';
+html+='<span><span class="label">'+t('receiver')+':</span> <span class="value">'+(d.receiver||'-')+'</span></span>';
+html+='</div>';
+if(d.receiverInfo){
+var ri=d.receiverInfo;
+html+='<div class="order-info" style="background:#fafafa">';
+html+='<span class="label">'+t('receiverInfo')+':</span> ';
+html+=ri.nome+' | '+ri.pais+' | '+ri.cidade+' | '+ri.rua+' | '+ri.cep+' | Tel:'+ri.telefone;
+html+='</div>';
+}
+if(d.records&&d.records.length>0){
+html+='<table class="track-table"><tr><th>'+t('time')+'</th><th>'+t('location')+'</th><th>'+t('desc')+'</th></tr>';
+for(var m=0;m<d.records.length;m++){
+var r=d.records[m];
+html+='<tr><td>'+r.time+'</td><td>'+r.location+'</td><td>'+r.desc+'</td></tr>';
+}
+html+='</table>';
+}
+html+='</div>';
+}
+if(notFound.length>0){
+html+='<div class="no-data" style="margin-top:5px">'+t('notFound')+'：'+notFound.join('、')+'</div>';
+}
+}
+document.getElementById('resultBody').innerHTML=html;
+}
+</script>
+
+</body>
+</html>
