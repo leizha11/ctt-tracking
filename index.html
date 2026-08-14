@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+    "0082800082809771637524":  {
+                                   "refNo":  "JHE0000162533CN",
+                                   "trackNo":  "0082800082809771637524",
+                                   "destination":  "ES",
+                                   "localTime":  "2026-08-15 06:26:17",
+                                   "status":  "Mercancía recogida",
+                                   "receiver":  "Diego Curiel Garzon",
+                                   "pieces":  1,
+                                   "receiverInfo":  {
+                                                        "nome":  "Diego Curiel Garzon",
+                                                        "pais":  "Espana",
+                                                        "cidade":  "Valladolid",
+                                                        "rua":  "C/ Serrania de Ronda N16",
+                                                        "cep":  "47010",
+                                                        "telefone":  "639230130"
+                                                    },
+                                   "records":  [
+                                                   {
+                                                       "time":  "2026-08-15 06:26:17",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía recogida"
+                                                   }
+                                               ]
+                               },
     "0082800082809771606896":  {
                                    "refNo":  "JHE0000161067CN",
                                    "trackNo":  "0082800082809771606896",
