@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html><head>
 <meta charset="UTF-8">
 <title id="pageTitle">轨迹查询</title>
@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+    "0082800082809771647715":  {
+                                   "refNo":  "JHE0000163092CN",
+                                   "trackNo":  "0082800082809771647715",
+                                   "destination":  "ES",
+                                   "localTime":  "2026-08-16 03:53:29",
+                                   "status":  "Mercancía recogida",
+                                   "receiver":  "Alvaro Garcia",
+                                   "pieces":  1,
+                                   "receiverInfo":  {
+                                                        "nome":  "Alvaro Garcia",
+                                                        "pais":  "Espana",
+                                                        "cidade":  "Linares",
+                                                        "rua":  "Calle Duque de Veragua n 1",
+                                                        "cep":  "23700",
+                                                        "telefone":  "697845883"
+                                                    },
+                                   "records":  [
+                                                   {
+                                                       "time":  "2026-08-16 03:53:29",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía recogida"
+                                                   }
+                                               ]
+                               },
     "0082800082809771672303":  {
                                    "refNo":  "JHE0000163039CN",
                                    "trackNo":  "0082800082809771672303",
@@ -120,7 +144,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771655611",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-15 21:54:42",
-                                   "status":  "Mercancía recogida",
+                                   "status":  "Mercancía llegada al centro de operaciones",
                                    "receiver":  "Faith Itepu",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -136,6 +160,11 @@ var orderData = {
                                                        "time":  "2026-08-15 21:54:42",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía recogida"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 00:23",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía llegada al centro de operaciones"
                                                    }
                                                ]
                                },
@@ -144,7 +173,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771671942",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-15 21:47:09",
-                                   "status":  "Mercancía recogida",
+                                   "status":  "Mercancía llegada al centro de operaciones",
                                    "receiver":  "Sebastian Montero Zambrano",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -160,6 +189,11 @@ var orderData = {
                                                        "time":  "2026-08-15 21:47:09",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía recogida"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 00:41",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía llegada al centro de operaciones"
                                                    }
                                                ]
                                },
@@ -168,7 +202,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771680690",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-15 19:39:12",
-                                   "status":  "Mercancía recogida",
+                                   "status":  "Mercancía llegada al centro de operaciones",
                                    "receiver":  "Ruben Guirado Soto",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -184,6 +218,11 @@ var orderData = {
                                                        "time":  "2026-08-15 19:39:12",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía recogida"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 00:57",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía llegada al centro de operaciones"
                                                    }
                                                ]
                                },
@@ -192,7 +231,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771637524",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-15 06:26:17",
-                                   "status":  "Mercancía recogida",
+                                   "status":  "Mercancía llegada al centro de operaciones",
                                    "receiver":  "Diego Curiel Garzon",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -208,6 +247,11 @@ var orderData = {
                                                        "time":  "2026-08-15 06:26:17",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía recogida"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 01:12",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía llegada al centro de operaciones"
                                                    }
                                                ]
                                },
@@ -216,7 +260,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771606896",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-13 17:39:18",
-                                   "status":  "Mercancía salida del centro de operaciones",
+                                   "status":  "Mercancía en almacén/Esperando declaración de aduana",
                                    "receiver":  "Alberto Fructuoso",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -242,6 +286,11 @@ var orderData = {
                                                        "time":  "2026-08-15 02:49",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía salida del centro de operaciones"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 01:26",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía en almacén/Esperando declaración de aduana"
                                                    }
                                                ]
                                },
@@ -250,7 +299,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771576986",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-12 02:11:15",
-                                   "status":  "Mercancía en almacén/Esperando declaración de aduana",
+                                   "status":  "Declaración de exportación completada",
                                    "receiver":  "lenssy yaseel gaborit hernandez",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -281,6 +330,11 @@ var orderData = {
                                                        "time":  "2026-08-15 00:29",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía en almacén/Esperando declaración de aduana"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 01:38",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Declaración de exportación completada"
                                                    }
                                                ]
                                },
@@ -289,7 +343,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771610130",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-12 00:10:50",
-                                   "status":  "Mercancía en almacén/Esperando declaración de aduana",
+                                   "status":  "Declaración de exportación completada",
                                    "receiver":  "Ramon Martin Pajares",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -320,6 +374,11 @@ var orderData = {
                                                        "time":  "2026-08-15 01:35",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía en almacén/Esperando declaración de aduana"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 01:53",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Declaración de exportación completada"
                                                    }
                                                ]
                                },
@@ -328,7 +387,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771576635",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-12 00:04:21",
-                                   "status":  "Mercancía en almacén/Esperando declaración de aduana",
+                                   "status":  "Declaración de exportación completada",
                                    "receiver":  "Ricardo Manuel Sanchez",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -359,6 +418,11 @@ var orderData = {
                                                        "time":  "2026-08-15 00:02",
                                                        "location":  "Guangzhou",
                                                        "desc":  "Mercancía en almacén/Esperando declaración de aduana"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:07",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Declaración de exportación completada"
                                                    }
                                                ]
                                },
@@ -367,7 +431,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771560685",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-09 21:05:35",
-                                   "status":  "Mercancía llegada al centro de tránsito",
+                                   "status":  "En tránsito",
                                    "receiver":  "Alberto Fructuoso",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -413,6 +477,11 @@ var orderData = {
                                                        "time":  "2026-08-15 00:59",
                                                        "location":  "Frankfurt, DE",
                                                        "desc":  "Mercancía llegada al centro de tránsito"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:14",
+                                                       "location":  "Frankfurt, DE",
+                                                       "desc":  "En tránsito"
                                                    }
                                                ]
                                },
@@ -421,7 +490,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771535232",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-09 20:52:51",
-                                   "status":  "Mercancía llegada al centro de tránsito",
+                                   "status":  "En tránsito",
                                    "receiver":  "Joaquin Rodriguez Izquierdo",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -467,6 +536,11 @@ var orderData = {
                                                        "time":  "2026-08-15 01:26",
                                                        "location":  "Frankfurt, DE",
                                                        "desc":  "Mercancía llegada al centro de tránsito"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:21",
+                                                       "location":  "Frankfurt, DE",
+                                                       "desc":  "En tránsito"
                                                    }
                                                ]
                                },
@@ -475,7 +549,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771508708",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-08 22:24:45",
-                                   "status":  "En tránsito",
+                                   "status":  "Mercancía llegada al destino/Esperando despacho de aduana",
                                    "receiver":  "Joaquin Rodriguez Izquierdo",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -526,6 +600,11 @@ var orderData = {
                                                        "time":  "2026-08-15 02:06",
                                                        "location":  "Frankfurt, DE",
                                                        "desc":  "En tránsito"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:28",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "Mercancía llegada al destino/Esperando despacho de aduana"
                                                    }
                                                ]
                                },
@@ -534,7 +613,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771521684",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-07 22:15:03",
-                                   "status":  "Mercancía llegada al destino/Esperando despacho de aduana",
+                                   "status":  "En despacho de aduana/En inspección aduanera",
                                    "receiver":  "Francisco Zamorano Martinez",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -590,6 +669,11 @@ var orderData = {
                                                        "time":  "2026-08-15 01:28",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "Mercancía llegada al destino/Esperando despacho de aduana"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:34",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "En despacho de aduana/En inspección aduanera"
                                                    }
                                                ]
                                },
@@ -598,7 +682,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771513168",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-07 22:13:01",
-                                   "status":  "Mercancía llegada al destino/Esperando despacho de aduana",
+                                   "status":  "En despacho de aduana/En inspección aduanera",
                                    "receiver":  "Ivan Chorro",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -654,6 +738,11 @@ var orderData = {
                                                        "time":  "2026-08-15 00:27",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "Mercancía llegada al destino/Esperando despacho de aduana"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:39",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "En despacho de aduana/En inspección aduanera"
                                                    }
                                                ]
                                },
@@ -662,7 +751,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771500058",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-06 04:08:25",
-                                   "status":  "En despacho de aduana/En inspección aduanera",
+                                   "status":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)",
                                    "receiver":  "Alberto Fructuoso",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -723,6 +812,11 @@ var orderData = {
                                                        "time":  "2026-08-15 00:10",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "En despacho de aduana/En inspección aduanera"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:43",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)"
                                                    }
                                                ]
                                },
@@ -731,7 +825,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771456904",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-06 02:52:50",
-                                   "status":  "En despacho de aduana/En inspección aduanera",
+                                   "status":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)",
                                    "receiver":  "Joan Diaz Tores",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -792,6 +886,11 @@ var orderData = {
                                                        "time":  "2026-08-15 02:28",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "En despacho de aduana/En inspección aduanera"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:45",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)"
                                                    }
                                                ]
                                },
@@ -800,7 +899,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771481349",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-06 01:58:07",
-                                   "status":  "En despacho de aduana/En inspección aduanera",
+                                   "status":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)",
                                    "receiver":  "Juan Francisco Moreno Perez",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -861,6 +960,11 @@ var orderData = {
                                                        "time":  "2026-08-15 02:09",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "En despacho de aduana/En inspección aduanera"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:47",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)"
                                                    }
                                                ]
                                },
@@ -869,7 +973,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771473408",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-06 01:56:28",
-                                   "status":  "En despacho de aduana/En inspección aduanera",
+                                   "status":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)",
                                    "receiver":  "Juan Miguel Casan Aibar",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -930,6 +1034,11 @@ var orderData = {
                                                        "time":  "2026-08-15 02:45",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "En despacho de aduana/En inspección aduanera"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:49",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)"
                                                    }
                                                ]
                                },
@@ -938,7 +1047,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771473404",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-06 01:54:52",
-                                   "status":  "En despacho de aduana/En inspección aduanera",
+                                   "status":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)",
                                    "receiver":  "Juan Francisco Moreno Perez",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -999,6 +1108,11 @@ var orderData = {
                                                        "time":  "2026-08-15 01:55",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "En despacho de aduana/En inspección aduanera"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:51",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)"
                                                    }
                                                ]
                                },
@@ -1007,7 +1121,7 @@ var orderData = {
                                    "trackNo":  "0082800082809771464813",
                                    "destination":  "ES",
                                    "localTime":  "2026-08-06 00:35:52",
-                                   "status":  "En despacho de aduana/En inspección aduanera",
+                                   "status":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)",
                                    "receiver":  "Bruno Djavan B Pinho",
                                    "pieces":  1,
                                    "receiverInfo":  {
@@ -1068,6 +1182,11 @@ var orderData = {
                                                        "time":  "2026-08-15 00:36",
                                                        "location":  "Madrid, ES",
                                                        "desc":  "En despacho de aduana/En inspección aduanera"
+                                                   },
+                                                   {
+                                                       "time":  "2026-08-16 02:53",
+                                                       "location":  "Madrid, ES",
+                                                       "desc":  "Mercancía llegada al centro de procesamiento de destino (retenida ⚠️)"
                                                    }
                                                ]
                                },
