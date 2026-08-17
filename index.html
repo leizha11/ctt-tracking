@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+    "0082800082809771669676":  {
+                                   "refNo":  "JHE0000164063CN",
+                                   "trackNo":  "0082800082809771669676",
+                                   "destination":  "ES",
+                                   "localTime":  "2026-08-17 22:57:35",
+                                   "status":  "Mercancía recogida",
+                                   "receiver":  "Redouan Kheiar Benamar",
+                                   "pieces":  1,
+                                   "receiverInfo":  {
+                                                        "nome":  "Redouan Kheiar Benamar",
+                                                        "pais":  "Espana",
+                                                        "cidade":  "Malaga",
+                                                        "rua":  "Plaza del Hospital Civil 10, 4o C",
+                                                        "cep":  "29009",
+                                                        "telefone":  "611900688"
+                                                    },
+                                   "records":  [
+                                                   {
+                                                       "time":  "2026-08-17 22:57:35",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía recogida"
+                                                   }
+                                               ]
+                               },
     "0082800082809771711043":  {
                                    "refNo":  "JHE0000164711CN",
                                    "trackNo":  "0082800082809771711043",
