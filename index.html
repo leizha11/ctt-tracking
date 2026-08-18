@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+    "0082800082809771689019":  {
+                                   "refNo":  "JHE0000165000CN",
+                                   "trackNo":  "0082800082809771689019",
+                                   "destination":  "ES",
+                                   "localTime":  "2026-08-18 19:15:51",
+                                   "status":  "Mercancía recogida",
+                                   "receiver":  "Marcos Castro del Rio",
+                                   "pieces":  1,
+                                   "receiverInfo":  {
+                                                        "nome":  "Marcos Castro del Rio",
+                                                        "pais":  "Espana",
+                                                        "cidade":  "Talavera de la Reina",
+                                                        "rua":  "Calle San Blas 5, Bajo A",
+                                                        "cep":  "45600",
+                                                        "telefone":  "650519837"
+                                                    },
+                                   "records":  [
+                                                   {
+                                                       "time":  "2026-08-18 19:15:51",
+                                                       "location":  "Guangzhou",
+                                                       "desc":  "Mercancía recogida"
+                                                   }
+                                               ]
+                               },
     "0082800082809771687102":  {
                                    "refNo":  "JHE0000164975CN",
                                    "trackNo":  "0082800082809771687102",
