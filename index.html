@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809771772097": {
+  "refNo": "JHE0000165856CN",
+  "trackNo": "0082800082809771772097",
+  "destination": "ES",
+  "localTime": "2026-08-21 01:34:12",
+  "status": "Mercancía recogida",
+  "receiver": "Miguel Angel Tenorio Barrionuevo",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Miguel Angel Tenorio Barrionuevo",
+   "pais": "Espana",
+   "cidade": "Deifontes",
+   "rua": "Calle Tenerife 9, Bajo",
+   "cep": "18570",
+   "telefone": "625113841"
+  },
+  "records": [
+   {
+    "time": "2026-08-21 01:34:12",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809771746084": {
   "refNo": "JHE0000165249CN",
   "trackNo": "0082800082809771746084",
