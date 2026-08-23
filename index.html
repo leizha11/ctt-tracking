@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809771789263": {
+  "refNo": "JHE0000167540CN",
+  "trackNo": "0082800082809771789263",
+  "destination": "ES",
+  "localTime": "2026-08-23 23:57:30",
+  "status": "Mercancía recogida",
+  "receiver": "Karim Dehmous",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Karim Dehmous",
+   "pais": "Espana",
+   "cidade": "Alicante",
+   "rua": "Calle Enric Valor 14, Bungalow 70",
+   "cep": "03540",
+   "telefone": "695087773"
+  },
+  "records": [
+   {
+    "time": "2026-08-23 23:57:30",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809771766295": {
   "refNo": "JHE0000166885CN",
   "trackNo": "0082800082809771766295",
