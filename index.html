@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809771860543": {
+  "refNo": "JHE0000167738CN",
+  "trackNo": "0082800082809771860543",
+  "destination": "ES",
+  "localTime": "2026-08-25 05:17:45",
+  "status": "Mercancía recogida",
+  "receiver": "Manuel Nieto Aranda",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Manuel Nieto Aranda",
+   "pais": "Espana",
+   "cidade": "Sevilla",
+   "rua": "Liebre 22 (la prensa)",
+   "cep": "41019",
+   "telefone": "620730066"
+  },
+  "records": [
+   {
+    "time": "2026-08-25 05:17:45",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809771835622": {
   "refNo": "JHE0000167416CN",
   "trackNo": "0082800082809771835622",
