@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809771910002": {
+  "refNo": "JHE0000168968CN",
+  "trackNo": "0082800082809771910002",
+  "destination": "ES",
+  "localTime": "2026-08-26 04:03:32",
+  "status": "Mercancía recogida",
+  "receiver": "Gabriela Ifrim",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Gabriela Ifrim",
+   "pais": "Espana",
+   "cidade": "Guadassequies",
+   "rua": "Calle Mayor 16",
+   "cep": "46839",
+   "telefone": "610367537"
+  },
+  "records": [
+   {
+    "time": "2026-08-26 04:03:32",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809771853686": {
   "refNo": "JHE0000168647CN",
   "trackNo": "0082800082809771853686",
