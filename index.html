@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772004383": {
+  "refNo": "JHE0000171405CN",
+  "trackNo": "0082800082809772004383",
+  "destination": "ES",
+  "localTime": "2026-09-01 03:07:58",
+  "status": "Mercancía recogida",
+  "receiver": "Bruno Alvarez Rodriguez",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Bruno Alvarez Rodriguez",
+   "pais": "Espana",
+   "cidade": "Albaida del Aljarafe",
+   "rua": "Calle Virgen de la Piedad n 9",
+   "cep": "41809",
+   "telefone": "656431823"
+  },
+  "records": [
+   {
+    "time": "2026-09-01 03:07:58",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809771979225": {
   "refNo": "JHE0000171461CN",
   "trackNo": "0082800082809771979225",
@@ -120,7 +144,7 @@ var orderData = {
   "trackNo": "0082800082809772003246",
   "destination": "ES",
   "localTime": "2026-08-31 21:57:18",
-  "status": "Mercancía recogida",
+  "status": "Mercancía llegada al centro de operaciones",
   "receiver": "Antonio Hernandez Garrigos",
   "pieces": 1,
   "receiverInfo": {
@@ -136,6 +160,11 @@ var orderData = {
     "time": "2026-08-31 21:57:18",
     "location": "Guangzhou",
     "desc": "Mercancía recogida"
+   },
+   {
+    "time": "2026-09-01 00:13",
+    "location": "Guangzhou",
+    "desc": "Mercancía llegada al centro de operaciones"
    }
   ]
  },
