@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809771979225": {
+  "refNo": "JHE0000171461CN",
+  "trackNo": "0082800082809771979225",
+  "destination": "ES",
+  "localTime": "2026-09-01 01:43:20",
+  "status": "Mercancía recogida",
+  "receiver": "Sunil Mohandas Daryani",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Sunil Mohandas Daryani",
+   "pais": "Espana",
+   "cidade": "CADIZ",
+   "rua": "avenida Jose Lopez Fernandez 55, 3 A",
+   "cep": "11510",
+   "telefone": "642737619"
+  },
+  "records": [
+   {
+    "time": "2026-09-01 01:43:20",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772003246": {
   "refNo": "JHE0000171268CN",
   "trackNo": "0082800082809772003246",
