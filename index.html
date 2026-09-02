@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "CH110457067DE": {
+  "refNo": "CH110457067DE",
+  "trackNo": "CH110457067DE",
+  "destination": "ES",
+  "localTime": "2026-09-02 18:20:11",
+  "status": "Mercancía recogida",
+  "receiver": "Cesar Estepa",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Cesar Estepa",
+   "pais": "Espana",
+   "cidade": "Palma de Mallorca",
+   "rua": "Calle Rei Marti n 25, 2o Piso",
+   "cep": "07007",
+   "telefone": "634667835"
+  },
+  "records": [
+   {
+    "time": "2026-09-02 18:20:11",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772019941": {
   "refNo": "JHE0000172651CN",
   "trackNo": "0082800082809772019941",
