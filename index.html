@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772059392": {
+  "refNo": "JHE0000172454CN",
+  "trackNo": "0082800082809772059392",
+  "destination": "ES",
+  "localTime": "2026-09-03 20:20:15",
+  "status": "Mercancía recogida",
+  "receiver": "Felix Casado Moran",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Felix Casado Moran",
+   "pais": "Espana",
+   "cidade": "Cabanillas del Campo",
+   "rua": "Calle Virgen de la Almudena 12",
+   "cep": "19171",
+   "telefone": "696429576"
+  },
+  "records": [
+   {
+    "time": "2026-09-03 20:20:15",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772055779": {
   "refNo": "JHE0000172342CN",
   "trackNo": "0082800082809772055779",
