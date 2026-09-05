@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772142968": {
+  "refNo": "JHE0000173239CN",
+  "trackNo": "0082800082809772142968",
+  "destination": "ES",
+  "localTime": "2026-09-05 22:32:36",
+  "status": "Mercancía recogida",
+  "receiver": "Javier Deus Marques",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Javier Deus Marques",
+   "pais": "Espana",
+   "cidade": "Ourense",
+   "rua": "Plaza 500 n 8, 2o G",
+   "cep": "32005",
+   "telefone": "637196854"
+  },
+  "records": [
+   {
+    "time": "2026-09-05 22:32:36",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772151101": {
   "refNo": "JHE0000173931CN",
   "trackNo": "0082800082809772151101",
