@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772151101": {
+  "refNo": "JHE0000173931CN",
+  "trackNo": "0082800082809772151101",
+  "destination": "ES",
+  "localTime": "2026-09-05 22:03:45",
+  "status": "Mercancía recogida",
+  "receiver": "Angel Alberto rial riveiro",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Angel Alberto rial riveiro",
+   "pais": "Espana",
+   "cidade": "vigo",
+   "rua": "tui Numero 10, piso 5, puerta C",
+   "cep": "36209",
+   "telefone": "653784146"
+  },
+  "records": [
+   {
+    "time": "2026-09-05 22:03:45",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772150863": {
   "refNo": "JHE0000173516CN",
   "trackNo": "0082800082809772150863",
