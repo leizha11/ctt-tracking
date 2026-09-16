@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772409424": {
+  "refNo": "JHE0000177745CN",
+  "trackNo": "0082800082809772409424",
+  "destination": "ES",
+  "localTime": "2026-09-17 03:06:31",
+  "status": "Mercancía recogida",
+  "receiver": "Juan Antonio Ledesma Lopez",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Juan Antonio Ledesma Lopez",
+   "pais": "Espana",
+   "cidade": "Viator",
+   "rua": "Calle Millares n 3, Bajo A",
+   "cep": "04240",
+   "telefone": "663036311"
+  },
+  "records": [
+   {
+    "time": "2026-09-17 03:06:31",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772409423": {
   "refNo": "JHE0000177029CN",
   "trackNo": "0082800082809772409423",
@@ -136,6 +160,11 @@ var orderData = {
     "time": "2026-09-15 01:16:01",
     "location": "Guangzhou",
     "desc": "Mercancía recogida"
+   },
+   {
+    "time": "2026-09-16 01:23",
+    "location": "Guangzhou",
+    "desc": "Mercancía llegada al centro de operaciones"
    }
   ]
  },
@@ -170,6 +199,11 @@ var orderData = {
     "time": "2026-09-15 00:52",
     "location": "Guangzhou",
     "desc": "Mercancía salida del centro de operaciones"
+   },
+   {
+    "time": "2026-09-16 00:47",
+    "location": "Guangzhou",
+    "desc": "Mercancía en almacén/Esperando declaración de aduana"
    }
   ]
  },
@@ -204,6 +238,11 @@ var orderData = {
     "time": "2026-09-15 00:47",
     "location": "Guangzhou",
     "desc": "Mercancía salida del centro de operaciones"
+   },
+   {
+    "time": "2026-09-16 01:08",
+    "location": "Guangzhou",
+    "desc": "Mercancía en almacén/Esperando declaración de aduana"
    }
   ]
  },
@@ -243,6 +282,11 @@ var orderData = {
     "time": "2026-09-15 01:16",
     "location": "Guangzhou",
     "desc": "Mercancía en almacén/Esperando declaración de aduana"
+   },
+   {
+    "time": "2026-09-16 00:36",
+    "location": "Guangzhou",
+    "desc": "Declaración de exportación completada"
    }
   ]
  },
@@ -282,6 +326,11 @@ var orderData = {
     "time": "2026-09-15 01:09",
     "location": "Guangzhou",
     "desc": "Mercancía en almacén/Esperando declaración de aduana"
+   },
+   {
+    "time": "2026-09-16 01:42",
+    "location": "Guangzhou",
+    "desc": "Declaración de exportación completada"
    }
   ]
  },
@@ -321,6 +370,11 @@ var orderData = {
     "time": "2026-09-15 00:58",
     "location": "Guangzhou",
     "desc": "Mercancía en almacén/Esperando declaración de aduana"
+   },
+   {
+    "time": "2026-09-16 02:14",
+    "location": "Guangzhou",
+    "desc": "Declaración de exportación completada"
    }
   ]
  },
@@ -365,6 +419,11 @@ var orderData = {
     "time": "2026-09-15 01:23",
     "location": "Guangzhou",
     "desc": "Declaración de exportación completada"
+   },
+   {
+    "time": "2026-09-16 00:53",
+    "location": "Guangzhou",
+    "desc": "Mercancía enviada/Vuelo despegado"
    }
   ]
  },
@@ -409,6 +468,11 @@ var orderData = {
     "time": "2026-09-15 01:31",
     "location": "Guangzhou",
     "desc": "Declaración de exportación completada"
+   },
+   {
+    "time": "2026-09-16 01:17",
+    "location": "Guangzhou",
+    "desc": "Mercancía enviada/Vuelo despegado"
    }
   ]
  },
@@ -458,6 +522,11 @@ var orderData = {
     "time": "2026-09-15 01:41",
     "location": "Guangzhou",
     "desc": "Mercancía enviada/Vuelo despegado"
+   },
+   {
+    "time": "2026-09-16 02:27",
+    "location": "Frankfurt, DE",
+    "desc": "Mercancía llegada al centro de tránsito"
    }
   ]
  },
@@ -512,6 +581,11 @@ var orderData = {
     "time": "2026-09-15 01:52",
     "location": "Frankfurt, DE",
     "desc": "Mercancía llegada al centro de tránsito"
+   },
+   {
+    "time": "2026-09-16 00:31",
+    "location": "Frankfurt, DE",
+    "desc": "En tránsito"
    }
   ]
  },
@@ -566,6 +640,11 @@ var orderData = {
     "time": "2026-09-15 02:03",
     "location": "Frankfurt, DE",
     "desc": "Mercancía llegada al centro de tránsito"
+   },
+   {
+    "time": "2026-09-16 01:55",
+    "location": "Frankfurt, DE",
+    "desc": "En tránsito"
    }
   ]
  },
@@ -625,6 +704,11 @@ var orderData = {
     "time": "2026-09-15 02:11",
     "location": "Frankfurt, DE",
     "desc": "En tránsito"
+   },
+   {
+    "time": "2026-09-16 02:05",
+    "location": "Madrid, ES",
+    "desc": "Mercancía llegada al destino/Esperando despacho de aduana"
    }
   ]
  },
@@ -684,6 +768,11 @@ var orderData = {
     "time": "2026-09-15 02:18",
     "location": "Frankfurt, DE",
     "desc": "En tránsito"
+   },
+   {
+    "time": "2026-09-16 00:44",
+    "location": "Madrid, ES",
+    "desc": "Mercancía llegada al destino/Esperando despacho de aduana"
    }
   ]
  },
@@ -748,6 +837,11 @@ var orderData = {
     "time": "2026-09-15 02:26",
     "location": "Madrid, ES",
     "desc": "Mercancía llegada al destino/Esperando despacho de aduana"
+   },
+   {
+    "time": "2026-09-16 01:29",
+    "location": "Madrid, ES",
+    "desc": "En despacho de aduana/En inspección aduanera"
    }
   ]
  },
