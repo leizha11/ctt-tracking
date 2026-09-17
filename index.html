@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772462935": {
+  "refNo": "JHE0000178640CN",
+  "trackNo": "0082800082809772462935",
+  "destination": "PT",
+  "localTime": "2026-09-18 02:21:12",
+  "status": "Mercancía recogida",
+  "receiver": "Emerson Gomes Da Silva",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Emerson Gomes Da Silva",
+   "pais": "Portugal",
+   "cidade": "Agualva-Cacem",
+   "rua": "Rua Dom Jose I n 5",
+   "cep": "2735-289",
+   "telefone": "937108225"
+  },
+  "records": [
+   {
+    "time": "2026-09-18 02:21:12",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772437800": {
   "refNo": "JHE0000178777CN",
   "trackNo": "0082800082809772437800",
