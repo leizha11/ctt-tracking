@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772483315": {
+  "refNo": "JHE0000178255CN",
+  "trackNo": "0082800082809772483315",
+  "destination": "ES",
+  "localTime": "2026-09-18 21:26:45",
+  "status": "Mercancía recogida",
+  "receiver": "Angel Domene",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Angel Domene",
+   "pais": "Espana",
+   "cidade": "Sant Boi de Llobregat",
+   "rua": "Victoria 62 2-1",
+   "cep": "08830",
+   "telefone": "616161914"
+  },
+  "records": [
+   {
+    "time": "2026-09-18 21:26:45",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772483308": {
   "refNo": "JHE0000178931CN",
   "trackNo": "0082800082809772483308",
