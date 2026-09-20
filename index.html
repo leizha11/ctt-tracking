@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772489550": {
+  "refNo": "JHE0000178443CN",
+  "trackNo": "0082800082809772489550",
+  "destination": "ES",
+  "localTime": "2026-09-20 23:22:16",
+  "status": "Mercancía recogida",
+  "receiver": "Jesus moscoso Posadas",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Jesus moscoso Posadas",
+   "pais": "Espana",
+   "cidade": "Puente Genil",
+   "rua": "Madrid numero 4",
+   "cep": "14500",
+   "telefone": "615914859"
+  },
+  "records": [
+   {
+    "time": "2026-09-20 23:22:16",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772489520": {
   "refNo": "JHE0000178820CN",
   "trackNo": "0082800082809772489520",
