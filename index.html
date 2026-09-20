@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772489520": {
+  "refNo": "JHE0000178820CN",
+  "trackNo": "0082800082809772489520",
+  "destination": "ES",
+  "localTime": "2026-09-20 23:13:11",
+  "status": "Mercancía recogida",
+  "receiver": "Sergio Andres Pascual",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Sergio Andres Pascual",
+   "pais": "Espana",
+   "cidade": "Moncada",
+   "rua": "Paseo de la Seda n 3, Piso 19",
+   "cep": "46113",
+   "telefone": "673922944"
+  },
+  "records": [
+   {
+    "time": "2026-09-20 23:13:11",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772504343": {
   "refNo": "JHE0000178286CN",
   "trackNo": "0082800082809772504343",
