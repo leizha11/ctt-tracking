@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772666757": {
+  "refNo": "JHE0000182437CN",
+  "trackNo": "0082800082809772666757",
+  "destination": "ES",
+  "localTime": "2026-09-28 20:25:54",
+  "status": "Mercancía recogida",
+  "receiver": "Andrei Carnu",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Andrei Carnu",
+   "pais": "Espana",
+   "cidade": "Almonte",
+   "rua": "Calle El Saltillo 53",
+   "cep": "21730",
+   "telefone": "692846339"
+  },
+  "records": [
+   {
+    "time": "2026-09-28 20:25:54",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772666748": {
   "refNo": "JHE0000182184CN",
   "trackNo": "0082800082809772666748",
