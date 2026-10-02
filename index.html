@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772783875": {
+  "refNo": "JHE0000182095CN",
+  "trackNo": "0082800082809772783875",
+  "destination": "PT",
+  "localTime": "2026-10-02 23:57:02",
+  "status": "Mercancía recogida",
+  "receiver": "Luis B Mendes",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Luis B Mendes",
+   "pais": "Portugal",
+   "cidade": "Monte da Caparica",
+   "rua": "Rua do Moinho n 15, R/C Esquerdo",
+   "cep": "2825-016",
+   "telefone": "928364314"
+  },
+  "records": [
+   {
+    "time": "2026-10-02 23:57:02",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772783874": {
   "refNo": "JHE0000182559CN",
   "trackNo": "0082800082809772783874",
