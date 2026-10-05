@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772864392": {
+  "refNo": "JHE0000183471CN",
+  "trackNo": "0082800082809772864392",
+  "destination": "ES",
+  "localTime": "2026-10-06 03:40:06",
+  "status": "Mercancía recogida",
+  "receiver": "Diego Bautista",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Diego Bautista",
+   "pais": "Espana",
+   "cidade": "Madrid",
+   "rua": "Calle Virgen del Coro n 7, 12o 4a",
+   "cep": "28027",
+   "telefone": "658278041"
+  },
+  "records": [
+   {
+    "time": "2026-10-06 03:40:06",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772864298": {
   "refNo": "JHE0000183499CN",
   "trackNo": "0082800082809772864298",
