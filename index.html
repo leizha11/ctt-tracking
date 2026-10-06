@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772930894": {
+  "refNo": "JHE0000184900CN",
+  "trackNo": "0082800082809772930894",
+  "destination": "ES",
+  "localTime": "2026-10-07 07:12:51",
+  "status": "Mercancía recogida",
+  "receiver": "Juan alberto sanchez Garcia",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Juan alberto sanchez Garcia",
+   "pais": "Espana",
+   "cidade": "Mairena del Alcor",
+   "rua": "Calle Nuestra Senora del Carmen 15",
+   "cep": "41510",
+   "telefone": "617751358"
+  },
+  "records": [
+   {
+    "time": "2026-10-07 07:12:51",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772864410": {
   "refNo": "JHE0000183804CN",
   "trackNo": "0082800082809772864410",
@@ -112,7 +136,8 @@ var orderData = {
     "time": "2026-10-06 04:04:55",
     "location": "Guangzhou",
     "desc": "Mercancía recogida"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:06",
     "location": "Guangzhou",
@@ -141,7 +166,8 @@ var orderData = {
     "time": "2026-10-06 03:40:06",
     "location": "Guangzhou",
     "desc": "Mercancía recogida"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:13",
     "location": "Guangzhou",
@@ -170,7 +196,8 @@ var orderData = {
     "time": "2026-10-06 01:57:42",
     "location": "Guangzhou",
     "desc": "Mercancía recogida"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:19",
     "location": "Guangzhou",
@@ -204,7 +231,8 @@ var orderData = {
     "time": "2026-10-06 00:07",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:26",
     "location": "Guangzhou",
@@ -238,7 +266,8 @@ var orderData = {
     "time": "2026-10-06 00:12",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:32",
     "location": "Guangzhou",
@@ -272,7 +301,8 @@ var orderData = {
     "time": "2026-10-06 00:18",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:38",
     "location": "Guangzhou",
@@ -306,7 +336,8 @@ var orderData = {
     "time": "2026-10-06 00:23",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:44",
     "location": "Guangzhou",
@@ -340,7 +371,8 @@ var orderData = {
     "time": "2026-10-06 00:31",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:51",
     "location": "Guangzhou",
@@ -374,7 +406,8 @@ var orderData = {
     "time": "2026-10-06 00:42",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 00:57",
     "location": "Guangzhou",
@@ -408,7 +441,8 @@ var orderData = {
     "time": "2026-10-06 00:47",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:03",
     "location": "Guangzhou",
@@ -442,7 +476,8 @@ var orderData = {
     "time": "2026-10-06 00:53",
     "location": "Guangzhou",
     "desc": "Mercancía llegada al centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:09",
     "location": "Guangzhou",
@@ -481,7 +516,8 @@ var orderData = {
     "time": "2026-10-06 00:58",
     "location": "Guangzhou",
     "desc": "Mercancía salida del centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:15",
     "location": "Guangzhou",
@@ -520,7 +556,8 @@ var orderData = {
     "time": "2026-10-06 01:04",
     "location": "Guangzhou",
     "desc": "Mercancía salida del centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:22",
     "location": "Guangzhou",
@@ -559,7 +596,8 @@ var orderData = {
     "time": "2026-10-06 01:11",
     "location": "Guangzhou",
     "desc": "Mercancía salida del centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:28",
     "location": "Guangzhou",
@@ -598,7 +636,8 @@ var orderData = {
     "time": "2026-10-06 01:16",
     "location": "Guangzhou",
     "desc": "Mercancía salida del centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:34",
     "location": "Guangzhou",
@@ -637,7 +676,8 @@ var orderData = {
     "time": "2026-10-06 01:24",
     "location": "Guangzhou",
     "desc": "Mercancía salida del centro de operaciones"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:41",
     "location": "Guangzhou",
@@ -686,7 +726,8 @@ var orderData = {
     "time": "2026-10-06 01:31",
     "location": "Guangzhou",
     "desc": "Declaración de exportación completada"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:47",
     "location": "Guangzhou",
@@ -735,7 +776,8 @@ var orderData = {
     "time": "2026-10-06 01:37",
     "location": "Guangzhou",
     "desc": "Declaración de exportación completada"
-   },
+   }
+,
    {
     "time": "2026-10-07 01:53",
     "location": "Guangzhou",
@@ -789,7 +831,8 @@ var orderData = {
     "time": "2026-10-06 01:43",
     "location": "Guangzhou",
     "desc": "Mercancía enviada/Vuelo despegado"
-   },
+   }
+,
    {
     "time": "2026-10-07 02:01",
     "location": "Frankfurt, DE",
@@ -853,7 +896,8 @@ var orderData = {
     "time": "2026-10-06 01:49",
     "location": "Frankfurt, DE",
     "desc": "En tránsito"
-   },
+   }
+,
    {
     "time": "2026-10-07 02:07",
     "location": "Lisboa, PT",
@@ -917,7 +961,8 @@ var orderData = {
     "time": "2026-10-06 01:55",
     "location": "Frankfurt, DE",
     "desc": "En tránsito"
-   },
+   }
+,
    {
     "time": "2026-10-07 02:14",
     "location": "Lisboa, PT",
@@ -986,7 +1031,8 @@ var orderData = {
     "time": "2026-10-06 02:02",
     "location": "Lisboa, PT",
     "desc": "Mercancía llegada al destino/Esperando despacho de aduana"
-   },
+   }
+,
    {
     "time": "2026-10-07 02:21",
     "location": "Lisboa, PT",
@@ -1055,7 +1101,8 @@ var orderData = {
     "time": "2026-10-06 02:09",
     "location": "Madrid, ES",
     "desc": "Mercancía llegada al destino/Esperando despacho de aduana"
-   },
+   }
+,
    {
     "time": "2026-10-07 02:28",
     "location": "Madrid, ES",
@@ -1124,7 +1171,8 @@ var orderData = {
     "time": "2026-10-06 02:17",
     "location": "Madrid, ES",
     "desc": "Mercancía llegada al destino/Esperando despacho de aduana"
-   },
+   }
+,
    {
     "time": "2026-10-07 02:35",
     "location": "Madrid, ES",
@@ -1193,7 +1241,8 @@ var orderData = {
     "time": "2026-10-06 02:26",
     "location": "Madrid, ES",
     "desc": "Mercancía llegada al destino/Esperando despacho de aduana"
-   },
+   }
+,
    {
     "time": "2026-10-07 02:42",
     "location": "Madrid, ES",
