@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809772888561": {
+  "refNo": "JHE0000184993CN",
+  "trackNo": "0082800082809772888561",
+  "destination": "ES",
+  "localTime": "2026-10-07 07:21:59",
+  "status": "Mercancía recogida",
+  "receiver": "Fernando Medina",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Fernando Medina",
+   "pais": "Espana",
+   "cidade": "La Algaba",
+   "rua": "C/PIO XII, n 71, ATICO",
+   "cep": "41980",
+   "telefone": "652460045"
+  },
+  "records": [
+   {
+    "time": "2026-10-07 07:21:59",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809772897015": {
   "refNo": "JHE0000184989CN",
   "trackNo": "0082800082809772897015",
