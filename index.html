@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773171381": {
+  "refNo": "JHE0000186040CN",
+  "trackNo": "0082800082809773171381",
+  "destination": "ES",
+  "localTime": "2026-10-15 19:15:57",
+  "status": "Mercancía recogida",
+  "receiver": "Javier Moreno Rivero",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Javier Moreno Rivero",
+   "pais": "Espana",
+   "cidade": "Valencia del Ventoso",
+   "rua": "Avenida de la Constitucion 9 bajo",
+   "cep": "06330",
+   "telefone": "684115599"
+  },
+  "records": [
+   {
+    "time": "2026-10-15 19:15:57",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773146398": {
   "refNo": "JHE0000186312CN",
   "trackNo": "0082800082809773146398",
