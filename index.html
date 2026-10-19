@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773249415": {
+  "refNo": "JHE0000187918CN",
+  "trackNo": "0082800082809773249415",
+  "destination": "ES",
+  "localTime": "2026-10-20 00:13:31",
+  "status": "Mercancía recogida",
+  "receiver": "Jordi Escoto Herraez",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Jordi Escoto Herraez",
+   "pais": "Espana",
+   "cidade": "Sagunto",
+   "rua": "Calle Escalante n 35, 1o",
+   "cep": "46520",
+   "telefone": "691216544"
+  },
+  "records": [
+   {
+    "time": "2026-10-20 00:13:31",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773256876": {
   "refNo": "JHE0000187907CN",
   "trackNo": "0082800082809773256876",
