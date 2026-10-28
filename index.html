@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773541566": {
+  "refNo": "JHE0000189761CN",
+  "trackNo": "0082800082809773541566",
+  "destination": "ES",
+  "localTime": "2026-10-28 23:15:48",
+  "status": "Mercancía recogida",
+  "receiver": "Cristobal Castilla Sanchez",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Cristobal Castilla Sanchez",
+   "pais": "Espana",
+   "cidade": "Cordoba",
+   "rua": "Avenida Tenor Pedro Lavirgen n 1, Bar El Tardeo",
+   "cep": "14006",
+   "telefone": "645131347"
+  },
+  "records": [
+   {
+    "time": "2026-10-28 23:15:48",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773460947": {
   "refNo": "JHE0000188494CN",
   "trackNo": "0082800082809773460947",
