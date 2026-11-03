@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773683580": {
+  "refNo": "JHE0000191668CN",
+  "trackNo": "0082800082809773683580",
+  "destination": "ES",
+  "localTime": "2026-11-03 22:26:41",
+  "status": "Mercancía recogida",
+  "receiver": "Jose Alonso Gonzales Fernandez",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Jose Alonso Gonzales Fernandez",
+   "pais": "Espana",
+   "cidade": "Madrid",
+   "rua": "Calle Virgen de los Reyes 7, piso 1 puerta 3",
+   "cep": "28027",
+   "telefone": "663426274"
+  },
+  "records": [
+   {
+    "time": "2026-11-03 22:26:41",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773682944": {
   "refNo": "JHE0000191267CN",
   "trackNo": "0082800082809773682944",
