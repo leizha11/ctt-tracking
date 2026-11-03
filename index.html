@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773659187": {
+  "refNo": "JHE0000191538CN",
+  "trackNo": "0082800082809773659187",
+  "destination": "ES",
+  "localTime": "2026-11-04 04:10:48",
+  "status": "Mercancía recogida",
+  "receiver": "Jorge Enrique Pulgarin Bedoya",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Jorge Enrique Pulgarin Bedoya",
+   "pais": "Espana",
+   "cidade": "Madrid",
+   "rua": "Calle Eduardo Minguito n 29, Bajo B",
+   "cep": "28021",
+   "telefone": "612279000"
+  },
+  "records": [
+   {
+    "time": "2026-11-04 04:10:48",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773684437": {
   "refNo": "JHE0000191591CN",
   "trackNo": "0082800082809773684437",
