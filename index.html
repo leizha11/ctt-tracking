@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773793954": {
+  "refNo": "JHE0000192240CN",
+  "trackNo": "0082800082809773793954",
+  "destination": "ES",
+  "localTime": "2026-11-07 19:32:25",
+  "status": "Mercancía recogida",
+  "receiver": "Jose Manuel Ramirez Vargas",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Jose Manuel Ramirez Vargas",
+   "pais": "Espana",
+   "cidade": "Jodar",
+   "rua": "Calle Juan Martin 117, 2a",
+   "cep": "23500",
+   "telefone": "627498596"
+  },
+  "records": [
+   {
+    "time": "2026-11-07 19:32:25",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773783239": {
   "refNo": "JHE0000192448CN",
   "trackNo": "0082800082809773783239",
