@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773815239": {
+  "refNo": "JHE0000192611CN",
+  "trackNo": "0082800082809773815239",
+  "destination": "ES",
+  "localTime": "2026-11-08 23:14:08",
+  "status": "Mercancía recogida",
+  "receiver": "Cristian Munoz",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Cristian Munoz",
+   "pais": "Espana",
+   "cidade": "Benalmadena",
+   "rua": "Avenida Inmaculada Concepcion n 20, p4 piso 3b",
+   "cep": "29631",
+   "telefone": "633860707"
+  },
+  "records": [
+   {
+    "time": "2026-11-08 23:14:08",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773840429": {
   "refNo": "JHE0000192644CN",
   "trackNo": "0082800082809773840429",
