@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773845631": {
+  "refNo": "JHE0000193804CN",
+  "trackNo": "0082800082809773845631",
+  "destination": "PT",
+  "localTime": "2026-11-10 01:35:08",
+  "status": "Mercancía recogida",
+  "receiver": "Sadik",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Sadik",
+   "pais": "Portugal",
+   "cidade": "Chelot",
+   "rua": "Estr. da Penha Armazem L18",
+   "cep": "8005-446",
+   "telefone": "938594657"
+  },
+  "records": [
+   {
+    "time": "2026-11-10 01:35:08",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "LZ492348740CN": {
   "refNo": "LZ492348740CN",
   "trackNo": "LZ492348740CN",
