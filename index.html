@@ -91,6 +91,54 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800045229702877721": {
+  "refNo": "JHE0000193111CN",
+  "trackNo": "0082800045229702877721",
+  "destination": "ES",
+  "localTime": "2026-11-11 04:43:59",
+  "status": "Mercancía recogida",
+  "receiver": "Sefora Salmeron Carmona",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Sefora Salmeron Carmona",
+   "pais": "Espana",
+   "cidade": "El Prat de Llobregat",
+   "rua": "Calle Riu Turia 15, 3-2",
+   "cep": "08820",
+   "telefone": "623457453"
+  },
+  "records": [
+   {
+    "time": "2026-11-11 04:43:59",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
+ "0082800045229702869864": {
+  "refNo": "JHE0000193260CN",
+  "trackNo": "0082800045229702869864",
+  "destination": "ES",
+  "localTime": "2026-11-11 04:43:49",
+  "status": "Mercancía recogida",
+  "receiver": "Sefora Salmeron Carmona",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Sefora Salmeron Carmona",
+   "pais": "Espana",
+   "cidade": "El Prat de Llobregat",
+   "rua": "Calle Riu Turia 15, 3-2",
+   "cep": "08820",
+   "telefone": "623457453"
+  },
+  "records": [
+   {
+    "time": "2026-11-11 04:43:49",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800045229702893706": {
   "refNo": "JHE0000193252CN",
   "trackNo": "0082800045229702893706",
