@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773936958001": {
+  "refNo": "JHE0000194929CN",
+  "trackNo": "0082800082809773936958001",
+  "destination": "ES",
+  "localTime": "2026-11-13 04:29:33",
+  "status": "Mercancía recogida",
+  "receiver": "Jose Bizcocho",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Jose Bizcocho",
+   "pais": "Espana",
+   "cidade": "Sevilla",
+   "rua": "Calle Ricardo Torres n 8A",
+   "cep": "41940",
+   "telefone": "656624451"
+  },
+  "records": [
+   {
+    "time": "2026-11-13 04:29:33",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800045229702877777": {
   "refNo": "JHE0000193286CN",
   "trackNo": "0082800045229702877777",
