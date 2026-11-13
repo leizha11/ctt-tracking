@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809773982242001": {
+  "refNo": "JHE0000194211CN",
+  "trackNo": "0082800082809773982242001",
+  "destination": "ES",
+  "localTime": "2026-11-13 22:41:33",
+  "status": "Mercancía recogida",
+  "receiver": "Alejandro Rubiales Dominguez",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Alejandro Rubiales Dominguez",
+   "pais": "Espana",
+   "cidade": "Chiclana de la Frontera",
+   "rua": "Camino de Naron n 10",
+   "cep": "11138",
+   "telefone": "622780173"
+  },
+  "records": [
+   {
+    "time": "2026-11-13 22:41:33",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809773966590001": {
   "refNo": "JHE0000194139CN",
   "trackNo": "0082800082809773966590001",
