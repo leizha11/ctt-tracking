@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809774045123001": {
+  "refNo": "JHE0000195291CN",
+  "trackNo": "0082800082809774045123001",
+  "destination": "ES",
+  "localTime": "2026-11-16 21:12:03",
+  "status": "Mercancía recogida",
+  "receiver": "David Romero Torrejon",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "David Romero Torrejon",
+   "pais": "Espana",
+   "cidade": "Gelves",
+   "rua": "Calle Prado del Canuelo 24",
+   "cep": "41120",
+   "telefone": "627981256"
+  },
+  "records": [
+   {
+    "time": "2026-11-16 21:12:03",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809774052864001": {
   "refNo": "JHE0000195715CN",
   "trackNo": "0082800082809774052864001",
