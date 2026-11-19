@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809774127331001": {
+  "refNo": "JHE0000196444CN",
+  "trackNo": "0082800082809774127331001",
+  "destination": "ES",
+  "localTime": "2026-11-19 20:04:00",
+  "status": "Mercancía recogida",
+  "receiver": "Francisco Javier Noguerol Lopez",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Francisco Javier Noguerol Lopez",
+   "pais": "Espana",
+   "cidade": "Montellano",
+   "rua": "Calle Cadiz 40",
+   "cep": "41770",
+   "telefone": "630347852"
+  },
+  "records": [
+   {
+    "time": "2026-11-19 20:04:00",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809774134629001": {
   "refNo": "JHE0000196733CN",
   "trackNo": "0082800082809774134629001",
