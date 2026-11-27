@@ -91,6 +91,30 @@ function t(key){return LANG[currentLang][key]||key}
 function switchLang(lang){currentLang=lang;document.getElementById('pageTitle').textContent=t('title');document.getElementById('cno').placeholder=t('placeholder');document.getElementById('btnQuery').textContent=t('query');document.getElementById('lblShipInfo').textContent=t('shipInfo');document.getElementById('lblTicket').textContent=t('ticket');document.getElementById('lblTicket2').textContent=t('ticket2');document.getElementById('lblPrompt').textContent=t('noData');var items=document.querySelectorAll('#langBar a');for(var i=0;i<items.length;i++)items[i].className='';var langMap={zh:0,es:1,pt:2};if(langMap[lang]!==undefined)items[langMap[lang]].className='active';if(document.getElementById('cno').value.trim())doQuery()}
 
 var orderData = {
+ "0082800082809774412251001": {
+  "refNo": "JHE0000203096CN",
+  "trackNo": "0082800082809774412251001",
+  "destination": "ES",
+  "localTime": "2026-11-27 22:37:05",
+  "status": "Mercancía recogida",
+  "receiver": "Jose Antonio Sanchez Ramos",
+  "pieces": 1,
+  "receiverInfo": {
+   "nome": "Jose Antonio Sanchez Ramos",
+   "pais": "Espana",
+   "cidade": "Cordoba",
+   "rua": "Escritor Gomez de Ribera n 8, 2 L",
+   "cep": "14014",
+   "telefone": "653924160"
+  },
+  "records": [
+   {
+    "time": "2026-11-27 22:37:05",
+    "location": "Guangzhou",
+    "desc": "Mercancía recogida"
+   }
+  ]
+ },
  "0082800082809774356589001": {
   "refNo": "JHE0000203604CN",
   "trackNo": "0082800082809774356589001",
